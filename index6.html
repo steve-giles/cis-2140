@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">
+		<script src="scripts/script.js"></script>
+		<!-- Feel free to change these meta tags -->
+		<meta name="description" content="eCommerce template for CIS-2140-VO01">			
+		<meta name="author" content="Steve Giles">	
+	</head>
+	<body onload="homePageLoaded()">
+		<header>
+			<div id="shopStatus"></div>
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span>Home</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html" id="active">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>	
+				<li class="searchButton"><a href="search.html">Search</a></li>					
+			</ul>
+		</nav>
+		<main>	
+			<h3>eCommerce website for CSI-2140 eCommerce Template</h3>
+			<p>Starting week 7 you'll start building the font end framework for a ecommerce website</p>
+			<dl>
+				<dt>Week 7 - Event Handling</dt>
+				<dd>
+					<p>This week you'll start implementing an eCommerce website using the attached template (eCommerce.zip).  The template has some basic HTML, but is missing functionality to process user events.  Your task is to implement some of the missing functionality to process user events.</p>
+					<p>Detect mouse movement events - Highlight/unhighlight a product image in response to mouse movement. Detect mouse click events - User requested to add an item to their cart in response to a mouse click.  Detect when a page event - Page is loaded in response to a page being loaded in the browser.</p>
+				</dd>
+				<dt>Week 8 - Objects</dt>
+				<dd>
+					<p>This week you'll continue to work on the eCommerce system.  You'll enhance a custom JavaScript object (user) by increasing the number of properties and adding a new method for your object.</p>
+					<p>When the user browses to the login page, and does not enter a user id and password, and clicks "Login," alert the user that the input is required (25 pts). When the user browses to the registration page, enters a password and confirm password, and the passwords do not match, alert the user "Passwords much match" and have the function return false (25 pts). When the user browses to the registration page, enters valid data, and clicks "Register," then alert the user with their full name.					
+					</p>
+				</dd>			
+				<dt>Week 9 - Document Object Model (DOM)</dt>
+				<dd>
+					<p>This week you'll continue to work on the eCommerce system by learning how to programatically interact with the HTML document.</p>
+					<p>When the user browses to the login page, enters a user id and password, and clicks login, on the top right corner of the screen display the text "Welcome [userid]". Be sure to replace [userid] with the user id entered by the user (25 pts). When the user browses to the shop page, and adds an item to their cart, disable the button that was just clicked (25 pts). When the user browses to the shop page, and adds an item to their cart, in the top left corner of the screen, notify the user that the product was added to their cart by displaying the text "[productId] was added to your cart. Replace [productId] of the id of myObject (25 pts). When the user browses to the shop page, and adds an item to their cart,  in the top right corner of the screen, increment the number of products in the cart, and display the text as "Products: [product count]" (25 pts).					
+					</p>
+				</dd>				
+				<dt>Week 10 - Windows Object</dt>
+				<dd>
+					<p>This week you'll continue to work on the eCommerce system by learning how to interact with the Windows Object. </p>
+					<p>When the user browses to the shop page, and adds an item to their cart, in the top left corner 
+					of the screen display a message that the product was added to their cart, and programmatically set 
+					the message to gradually disappear (fade out) after five seconds. Without any user action, after five 
+					seconds the message should gradually disappear (fade out).  The fade out time should take two 
+					seconds (40 pts). When the user navigates to the Product Details page, and clicks the “Return to 
+					previous page,” then programmatically navigate to the users previous page (20 pts). When the user 
+					navigates to the Product Details page, and clicks the print icon, open the Print Dialog Box and 
+					display a print view of the page (20pts). When the user navigates to the Product Details page, 
+					display an alert which contains the current url. (20pts)					
+					</p>
+				</dd>
+				<dt>Week 11 - Arrays</dt>
+				<dd>
+					<p>This week you'll continue to work on the eCommerce system by implementing an array, while also making use of JavaScript iterators, tables, conditional statements, and the DOM.</p>
+					<p>When the user places their mouse pointer over the product shopping cart icon located on the top left corner of the screen, and pop-up dialog is displayed.  All changes are located in this dialog. If the shopping cart is empty, display a message “There are no items in your cart.”  You can check if items are in their cart by checking the size (length) of the array (shoppingCart) (25 pts). Iterate the shoppingCart array, and dynamically display a table which contains all items in their cart.  At a minimum, you should display each product image, description, product quantity, and a button to remove the item.  See function loadPageData as an example of how to dynamically create the HTML using JavaScript (65 pts). When the user request to remove an item from their cart, call function removeFromCart.  You can accomplish this by attaching the click event to your button.  See the function addEventListener as an example (10 pts).					
+					</p>
+				</dd>
+				<dt>Week 12 - Strings, Cookies, and Date objects</dt>
+				<dd>
+					<p>This week you'll will provide the ability for the ecommerce site to remember the previously logged on user by working with Strings, Cookies, and the Date object.</p>
+					<p>When the user logs on with the “remember me” check box checked, store the user id in one cookie, and the date/time when the user logged in, in a second cookie (30 pts).  When the user logs on with the “remember me” check box” not checked, then delete the previous two cookies.  Note: there is no need to check if the cookies exists, instead just create and save the two cookies with an expiration date/time in the past.(20 pts).  When the user loads the login page, and the user previously logged in with the “remember me” check box checked, then get the user id from the previously saved cookie, populate the user id input element with the user id read from the cookie, and check the “remember me” check box (25 pts).  When the user loads the home page, and the user previously logged in with the “remember me” check box checked, then get the user id from the previously saved cookie, get the date time the user logged in from the other previously saved cookie, and in the top right corner of the screen display a message "Welcome back [userid]. Previous login at [previousDateTimeLogin" (25 pts).					
+					</p>
+				</dd>				
+				<dt>Week 13 - Forms</dt>
+				<dd>
+					<p>This assignment will involve working with three forms: User Registration, User Login, and Contact Us.</p>
+					<p> User Registration – Enhance this page (registration.html) to submit the user entered data to a server side page for processing (myAccount.php).  When the page form is submitted, call the JavaScript function registerUser() to perform client side validation (15 pts).  User Login – Enhance this page (login.html) to submit the user entered data to a server side page for processing (myAccount.php).  When the page form is submitted, call the JavaScript function userLogin() to perform client side validation (15 pts).  Contact Us – Create a new page with a form.  When the user enters the required data and complete the form, submit the user entered data to a serer side page for processing (myAccount.php).  When the page form is submitted, call the JavaScript function registerUser() to perform client side validation (70 pts).				
+					</p>
+				</dd>	
+
+				</dl>
+		</main>
+		<footer>
+			<span>CSI-2140 eCommerce Template</span>
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+	</body>
+</html>

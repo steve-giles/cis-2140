@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">
+		<script src="scripts/script.js"></script>
+		<!-- Feel free to change these meta tags -->
+		<meta name="description" content="eCommerce template for CIS-2140-VO01">			
+		<meta name="author" content="Steve Giles">	
+	</head>
+	<body onload="homePageLoaded()">
+		<header>
+			<div id="shopStatus"></div>
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span>Site Search</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>	
+				<li class="searchButton"><a href="search.html" id="active">Search</a></li>					
+			</ul>
+		</nav>
+		<main>	
+			<script>
+				(function() {
+					var cx = '005388663184114609739:jkx00ry97iw';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				})();
+			</script>
+			<gcse:search ></gcse:search>		
+		</main>
+		<footer>
+			<span>CSI-2140 eCommerce Template</span>
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+	</body>
+</html>

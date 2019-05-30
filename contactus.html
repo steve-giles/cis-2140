@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">
+		<script src="scripts/script.js"></script>	
+		<style>
+			input, select, textarea {
+				margin:5px;
+			}
+		</style>
+		</head>
+	<body onload="loginPageLoaded()">
+		<header>
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span>Contact Us</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html"> Checkout</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html" >Register</a></li>		
+				<li class="searchButton"><a href="search.html">Search</a></li>	
+			</ul>			
+		</nav>
+		<main>
+			<form action="contactUs.php" method="post">
+				<fieldset >
+					<legend>Contact Us</legend>
+					<div>
+						<label for='name' class="longLabel">First Name*: </label>
+						<input type='text' name='firstName' id='firstName' maxlength="50" required />
+					</div>
+					<div>
+						<label for='name' class="longLabel">Last Name*: </label>
+						<input type='text' name='lastName' id='lastName' maxlength="50" required/>
+					</div>
+					<div>
+						<label for='email' class="longLabel">Email Address*:</label>
+						<input type='email' name='email' id='email' maxlength="50" required/>
+					</div>
+					<div>
+						<label for='phone' class="longLabel">Phone:</label>
+						<input type='tel' name='phone' id='phone'/>
+					</div>
+					<div>
+						<label for='reason' class="longLabel">What can we help you with?</label>
+						<select name="reason">
+							<option value="order">Your Order</option>
+							<option value="return">Returns and Refunds</option>
+							<option value="payments">Payments and Gift Cards</option>
+						</select>
+					</div>						
+					<div>				 
+						<label for='comments' class="longLabel" style="vertical-align:top">Comments:*</label>
+						<textarea name='comments' id='comments' rows="10" cols="50" required></textarea>
+					</div>
+
+					<div>				
+					<input type="submit" value="Contact Us">
+					<input type="reset">
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<span>CSI-2140 eCommerce Template</span>
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+	</body>
+</html>
+

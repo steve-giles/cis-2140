@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">
+		<script src="scripts/script.js"></script>		
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+		<script type="text/javascript">
+			// The payment provider for this system is stripe.com. See https://stripe.com/docs/stripe.js
+			Stripe.setPublishableKey('pk_test_qOTRelOsHoj7bl9jfDsErDVs');
+		</script>
+		<style>
+			input {
+				margin:5px;
+			}
+		</style>		
+	</head>
+	<body>
+		<header>
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span>Checkout</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html" id="active">Checkout</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li class="searchButton"><a href="search.html">Search</a></li>					
+			</ul>			
+		</nav>
+		<main>	
+			<form action="" method="POST" id="payment-form" onsubmit="return onPaymentSumbit()">
+				<span class="payment-errors"></span>
+
+				<div class="form-row">
+					<label>
+					  <span>Card Number</span>
+					  <input type="text" size="20" data-stripe="number" value="4242 4242 4242 4242">
+					</label>
+				</div>
+
+				<div class="form-row">
+					<label>
+					  <span>Expiration (MM/YY)</span>
+					  <input type="text" size="2" data-stripe="exp_month" value="12">
+					</label>
+					<span> / </span>
+					<input type="text" size="2" data-stripe="exp_year" value="18">
+				</div>
+
+				<div class="form-row">
+					<label>
+					  <span>CVC</span>
+					  <input type="text" size="4" data-stripe="cvc" value="123">
+					</label>
+				</div>
+				<br>
+				<input type="submit" class="submit" value="Submit Payment">
+			</form>
+		</main>
+		<footer>
+			<span>CSI-2140 eCommerce Template</span>	
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+	padding:5px;
+}
+main {
+	clear:both;
+}
+footer {
+	clear:both;
+}
+nav {
+	margin-bottom:15px;
+}
+header {
+	text-align:center;
+}
+footer {
+	text-align:center;
+	margin-top:15px;
+}
+footer div {
+	margin-top:5px;
+}
+.productNoHighlight {
+	border: 1px solid white;
+
+}
+.productHighlight {
+	border: 1px solid black;
+}
+.productDescription {
+	width:180px;
+}
+.productPrice {
+	color:red;
+	font-weight:bold;
+}
+#shopStatus {
+	float:right;
+	height:20px;
+	margin-right:50px;
+}
+#productAdded {
+	float:left;
+	height:20px;
+	margin-left:10px;
+}
+
+header h1 {
+	clear:right;
+}
+table{
+    margin: auto;	
+}
+td {
+	padding:10px;
+}
+.shortLabel {
+	width:100px; 
+	display: inline-block;	
+}
+.longLabel {
+	width:200px; 
+	display: inline-block;
+	
+}
+.productImage {
+	min-height:230px;
+}
+#productsInCart {
+	font-size:26px;
+	font-family:arial;
+}
+/* source: http://stackoverflow.com/questions/15907079/css3-transition-fade-out-effect */
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: none;
+}
+/* source: http://stackoverflow.com/questions/15907079/css3-transition-fade-out-effect */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}

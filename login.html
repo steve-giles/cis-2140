@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">
+		<script src="scripts/script.js"></script>	
+		<style>
+			input {
+				margin:5px;
+			}
+		</style>
+	</head>
+	<body onload="loginPageLoaded()">
+		<header>
+			<div id="shopStatus"></div>		
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span>Login</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html"> Checkout</a></li>
+				<li><a href="login.html" id="active">Login</a></li>
+				<li><a href="register.html">Register</a></li>		
+				<li class="searchButton"><a href="search.html">Search</a></li>	
+			</ul>			
+		</nav>
+		<main>
+			<form action="myAccount.php" method="post" onsubmit="return userLogin();">		
+				<div>
+					<label type="text" class="shortLabel" for="userId">User Id</label>
+					<input type="text" id="userId" name="userId">
+				</div>
+				<div>
+					<label type="text" class="shortLabel" for="passwordId">Password</label>
+					<input type="password" id="passwordId" name="passwordId">
+				</div>
+				<div>
+					<input id="chkRememberMe" type="checkbox" /> 
+					<label>Remember me</label>  				
+				</div>
+				<div>
+					<input type="submit" value="Login" id="login">
+				</div>
+			</form>
+		</main>
+		<footer>
+			<span>CSI-2140 eCommerce Template</span>
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+/*
+	Responsive grid layout using flexbox
+
+	Sources: 
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+		https://www.sitepoint.com/easy-responsive-css-grid-layouts/
+
+	"The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements 
+	on a page such that the elements behave predictably when the page layout must accommodate 
+	different screen sizes and different display devices. For many applications, the flexible box 
+	model provides an improvement over the block model in that it does not use floats, nor do the 
+	flex container's margins collapse with the margins of its contents."	
+*/
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 -10px;
+	margin-bottom: 10px;
+}
+.row:last-child {
+	margin-bottom: 0;
+}
+[class*="col-"] {
+	padding: 10px;
+	width: 100%;
+}
+
+@media all and ( min-width: 800px ) {
+	/* set col widths */
+	.col-2-3 {
+		width: 66.66%;
+	}
+	.col-1-2 {
+		width: 50%;
+	}
+	.col-1-3 {
+		width: 33.33%;
+	}
+	.col-1-4 {
+		width: 22%;
+	}
+	.col-1-8 {
+		width: 12.5%;
+	}
+}

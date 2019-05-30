@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/layout.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">		
+		<link rel="stylesheet" type="text/css" href="styles/modal.css">		
+		<script src="scripts/script.js"></script>
+		<style>
+			#shoppingCartPreview {
+				clear:both;
+			}
+		</style>
+	</head>
+	<body onload="shopPageLoaded()">
+		<header>
+			<div id="productAdded">				
+			</div>
+			<div id="shopStatus">
+				<img src="images/cart.jpg" alt="Shopping Cart" title="view shopping cart">
+				<span id="productsInCart"></span>
+			</div>			
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span>Shop</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html">Home</a></li>
+				<li><a href="shop.html" id="active">Shop</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>		
+				<li class="searchButton"><a href="search.html">Search</a></li>		
+			</ul>			
+		</nav>
+		<main>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">×</span>
+						<h2>My Shopping Cart</h2>
+					</div>
+					<div id="shoppingCartPreview">
+						<tr id="tableRow">
+							<!-- dynamically create the HTML shopping cart preview -->
+						</tr>
+					</div>
+				</div>
+			</div>
+			<div id="productListing">
+				<div class="row" id="products">
+					<!-- dynamically create the product HTML  -->
+				</div>
+			</div>
+		</main>
+		<footer>
+			<span>CSI-2140 eCommerce Template</span>			
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+			
+		<!-- This needs to load after the HTML -->
+		<script src="scripts/modal.js"></script>	
+		<script>
+			loadPageData();
+		</script>			
+	</body>
+</html>

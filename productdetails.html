@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>eCommerce Website Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/menu.css">
+		<script src="scripts/script.js"></script>			
+		<style>
+			#column-left{ float: left; width: 33%; }
+			#column-right{ float: right; width: 33%; }
+			#column-center{ display: inline-block; width: 33%; }			
+		</style>
+	</head>
+	<body onload="productDetailsPageLoaded()">
+		<header>
+			<div id="productAdded">				
+			</div>
+			<div id="shopStatus">
+				<span>Products:</span><span id="productsInCart"></span>
+			</div>			
+			<h1>CSI-2140 eCommerce Template</h1>
+			<h2>
+				<span id=productDetails>Product Details</span>
+			</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index6.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li class="searchButton"><a href="search.html">Search</a></li>					
+			</ul>			
+		</nav>
+		<main>
+			<div id="column-left">
+				<!--to do - when the hyperlink is clicked, return to the previous page in the users history -->
+				<a href="#" id="navigateBack" onclick="window.history.back()">&lt;&lt;&nbsp;Return to previous page</a>
+				<br><br>
+				<div>
+					<span>Picture of the product will go here</span>
+				</div>
+			</div>
+			<div id="column-center">
+				<span>Detailed product information will go here</span>
+			</div>
+			<div id="column-right">
+				<!-- to do - when the image is clicked display a print preview -->
+				<img src="images/print.gif" id="printProduct" alt="Print product" title="Print product" onclick="window.print()">
+				<a href="#"><img src="images/facebook.jpg" alt="Facebook" title="Facebook"></a>
+			</div>
+
+		</main>
+		<footer style="clear:left">
+			<span>CSI-2140 eCommerce Template</span>			
+			<div>
+				<a href="productlist.html" alt="Listing of products" title="Product Listing">Product List</a>&nbsp;|&nbsp;
+				<a href="#" alt="Privacy policy not yet completed" title="View our Privacy Policy">Privacy Policy</a>&nbsp;|&nbsp;
+				<a href="contactus.html" alt="Contact Us" title="Contact Us">Contact Us</a>
+			</div>
+		</footer>
+	</body>
+</html>
