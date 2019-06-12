@@ -133,7 +133,7 @@ function loginPageLoaded() {
 function shopPageLoaded() {
 	var x;
 
-	// this is an example of using the DOM to get every HTML element with an id of productImage
+	// this is an example of using the DOM to get every HTML element with a name of productImage
 	x = document.getElementsByName("productImage");
 
 	// for every element, attach the mouseover and mouseout event
